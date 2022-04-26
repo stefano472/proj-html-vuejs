@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="top-header container flex-row font-09">
+    <div class="top-header container flex-row">
       <a href="#" class="flex-row">
         <img src="@/assets/dark-pet-logo.png" alt="logo">
       </a>
@@ -8,7 +8,7 @@
         <button class="submit">
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
         </button>
-        <input type="text" class="input font-07" placeholder="Search...">
+        <input type="text" class="input" placeholder="Search...">
       </div>
       <div class="question">
         <b>Questions? </b>
@@ -16,7 +16,7 @@
       </div>
       <div class="icons flex-row">
         <font-awesome-icon icon="fa-solid fa-bag-shopping" />
-        <font-awesome-icon icon="fa-regular fa-user" />
+        <font-awesome-icon icon="fa-solid fa-user-large" />
       </div>
     </div>
     <div class="bottom-header">
@@ -107,14 +107,14 @@ export default {
     color: $text-black !important;
 }
 header {
-  --size: 2rem;
+  --size: 2.2rem;
   .top-header{
     justify-content: space-between;
     img {
       height: var(--size);
     }
     .search-bar {
-      border-radius: 50px;
+      border-radius: var(--size);
       background: $bg-search-bar;
       height: var(--size);
       padding: 0.1rem;
@@ -164,6 +164,7 @@ header {
       li {
         cursor: pointer;
         a {
+          font-weight: 600;
           color: $text-secondary;
           text-decoration: none;
           &:hover {

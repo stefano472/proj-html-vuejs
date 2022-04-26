@@ -1,6 +1,6 @@
 <template>
   <main>
-    <Jumbo />
+    <Hero />
     <Browse />
     <Testimonials />
     <NewProduct />
@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Jumbo from '@/components/Main_Jumbo.vue'
+import Hero from '@/components/Main_Hero.vue'
 import Browse from '@/components/Main_Browse.vue'
 import Testimonials from '@/components/Main_Testimonials.vue'
 import NewProduct from '@/components/Main_NewProduct.vue'
@@ -17,7 +17,7 @@ import NewProduct from '@/components/Main_NewProduct.vue'
 export default {
     name: "MainComponent",
     components: {
-      Jumbo,
+      Hero,
       Browse,
       Testimonials,
       NewProduct
