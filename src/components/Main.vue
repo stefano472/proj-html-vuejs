@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <main>
     <Jumbo />
     <Browse />
     <Testimonials />
     <NewProduct />
-  </div>
+  </main>
 </template>
 
 <script>

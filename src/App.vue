@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+
     <Header />
     <Main />
     <Footer />
@@ -12,6 +12,8 @@
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
+import "@fontsource/raleway"
+import "@fontsource/raleway/600.css"
 
 
 export default {
@@ -25,12 +27,14 @@ export default {
 </script>
 
 <style lang="scss">
+@use '@/style/style';
+@use '@/style/variables' as *;
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  // header {
+  //   color: $text-title;
+  // }
 }
 </style>
