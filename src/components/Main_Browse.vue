@@ -38,14 +38,29 @@
           <h2 class="font-25">Items everyone loves</h2>
         </div>
         <div class="button">
-          <button @click="functionToggle" class="btn btn__secondary">View all product</button>
+          <button v-if="!toggleAllProduct" 
+                  @click="functionToggle" 
+                  class="btn btn__secondary"
+          >
+            View all product
+          </button>
+          <button v-if="toggleAllProduct" 
+                  @click="functionToggle" 
+                  class="btn btn__secondary"
+          >
+            View top-rated product
+          </button>
         </div>
       </div>
       <ul class="flex-row">
         <li v-for="item in arrayItemLoved" :key="item.name">
           <img :src="item.imgPath" :alt="item.name">
           <h3>{{item.name}}</h3>
-          <p>{{item.price}}</p>
+          <p v-if="item.onSale.length === 0">{{item.price}}</p>
+          <p v-else class="on-sale flex-row">
+            <span class="font-07">{{item.price}}</span> 
+            <span>{{item.onSale}}</span>
+          </p>
         </li>
       </ul>
     </div>
@@ -198,6 +213,17 @@ export default {
         border-radius: 2px;
         width: 100%;
         padding-bottom: 1rem;
+      }
+      p {
+        color: $text-tertiary;
+        margin: 0.7rem auto 1rem;
+        &.on-sale {
+          justify-content: center;
+          gap: 0.2rem;
+          span:first-child {
+            text-decoration: line-through;
+          }
+        }
       }
     }
   }
