@@ -14,6 +14,8 @@ import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
 import "@fontsource/raleway"
 import "@fontsource/raleway/600.css"
+import "@fontsource/libre-bodoni"
+import "@fontsource/libre-bodoni/700.css"
 
 
 export default {
