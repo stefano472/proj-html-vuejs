@@ -25,7 +25,7 @@
         <div class="wrapper">
           <p class="font-09">FIND THE BEST ANIMAL SUPPLIES</p>
           <h1 class="font-30">We know animals are a part of your family, let us help take care of them</h1>
-          <button>Learn more about us</button>
+          <button class="btn btn__primary">Learn more about us</button>
         </div>
       </div>
     </div>
@@ -78,16 +78,6 @@ export default {
       }
       button {
         margin: 2rem 0 9rem;
-        cursor: pointer;
-        padding: 0.5rem 1rem;
-        border: 0;
-        border-radius: 50px;
-        background: $btn-bg-primary;
-        color: $text-black;
-        &:hover {
-          color: $text-title;
-          background: $btn-hover-secondary;
-        }
       }
     }
   }
