@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 
@@ -13,6 +14,8 @@ import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
 import { faMap } from '@fortawesome/free-regular-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+
 
 /* add icons to the library */
 library.add(
@@ -23,13 +26,15 @@ library.add(
   faDollarSign, 
   faMap, 
   faClock, 
-  faCheck
+  faCheck,
+  faQuoteLeft
 )
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 
 Vue.config.productionTip = false
 

@@ -72,7 +72,7 @@ import arrayProducts from "@/data/products.json"
 
 
 export default {
-    name: "HeaderComponent",
+    name: "MainBrowse",
     data() {
       return {
         arrayProducts,
@@ -100,7 +100,7 @@ export default {
         if (this.toggleAllProduct) {
           return this.arrayProducts
         }
-        return this.arrayProducts.filter(e => e.rating === 5)
+        return this.arrayProducts.filter(e => e.allTimeSell >= 159)
       }
     }, 
     methods: {
@@ -133,7 +133,6 @@ export default {
 }
 .categories {
   ul {
-    list-style: none;
     gap: 0.7rem;
     li {
       text-align: center;
@@ -149,7 +148,6 @@ export default {
 .dog-food {
   margin: 6rem auto;
   ul {
-    list-style: none;
     gap: 1rem;
     li {
       border-radius: 5px;
@@ -203,7 +201,6 @@ export default {
     }
   }
   ul {
-    list-style: none;
     flex-wrap: wrap;
     gap: 0.7rem;
     li {

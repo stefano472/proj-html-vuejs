@@ -2,7 +2,7 @@
   <main>
     <Hero />
     <Browse />
-    <Testimonials />
+    <Interaction />
     <NewProduct />
   </main>
 </template>
@@ -10,7 +10,7 @@
 <script>
 import Hero from '@/components/Main_Hero.vue'
 import Browse from '@/components/Main_Browse.vue'
-import Testimonials from '@/components/Main_Testimonials.vue'
+import Interaction from '@/components/Main_Interaction.vue'
 import NewProduct from '@/components/Main_NewProduct.vue'
 
 
@@ -19,7 +19,7 @@ export default {
     components: {
       Hero,
       Browse,
-      Testimonials,
+      Interaction,
       NewProduct
     }
 

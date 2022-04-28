@@ -5,10 +5,10 @@
         <img src="@/assets/dark-pet-logo.png" alt="logo">
       </a>
       <div class="search-bar flex-row">
-        <button class="submit">
+        <button @click="getInput" class="submit">
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
         </button>
-        <input type="text" class="input" placeholder="Search...">
+        <input v-model="inputSearch" type="text" class="input" placeholder="Search...">
       </div>
       <div class="question">
         <b>Questions? </b>
@@ -61,7 +61,8 @@ export default {
     name: "HeaderComponent",
     data() {
       return {
-        arrayMenuList
+        arrayMenuList,
+        inputSearch: ''
       }
     },
     methods: {
@@ -69,6 +70,11 @@ export default {
         this.arrayMenuList.forEach((item, index) => {
             item.active = (i===index)
         })
+      },
+      getInput() {
+        console.log(this.inputSearch),
+        // this.$emit('getUserInput', this.inputSearch),
+        this.inputSearch = ''
       }
     }
 }
@@ -83,6 +89,7 @@ header {
   --size: 2.2rem;
   width: 100%;
   position: fixed;
+  z-index: 1000;
   top: 0;
   background: $bg-primary;
   .top-header{
@@ -112,7 +119,9 @@ header {
         padding: 0 1rem;
         border: 0;
         background: transparent;
+        font-weight: 600;
         &::placeholder {
+          font-weight: 400;
           color: $text-black;
         }
         &:focus {
@@ -135,7 +144,6 @@ header {
   .bottom-header {
     box-shadow: 0 -1px 0 $bg-search-bar;
     ul {
-      list-style: none;
       justify-content: center;
       .header-item {
         cursor: pointer;

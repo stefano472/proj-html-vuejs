@@ -8,7 +8,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-9-600x600.jpg",
         "price": "$25.00",
         "onSale": "$19.90",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 251
     },
     {
         "name": "Green colored pet bed",
@@ -19,7 +20,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-8-600x600.jpg",
         "price": "$25.00",
         "onSale": "",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 102
     },
     {
         "name": "Dog bone",
@@ -30,7 +32,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-3-600x600.jpg",
         "price": "$29.00",
         "onSale": "$18.00",
-        "newProduct": true
+        "newProduct": true,
+        "allTimeSell": 5
     },
     {
         "name": "Dog treats",
@@ -41,7 +44,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-18-600x600.jpg",
         "price": "$5.00",
         "onSale": "",
-        "newProduct": true
+        "newProduct": true,
+        "allTimeSell": 15
     },
     {
         "name": "Dry food",
@@ -52,7 +56,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-13-600x600.jpg",
         "price": "$25.00",
         "onSale": "",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 150
     },
     {
         "name": "Moist food",
@@ -63,7 +68,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-14-600x600.jpg",
         "price": "$25.00",
         "onSale": "",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 145
     },
     {
         "name": "Frozen food",
@@ -74,7 +80,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-15-600x600.jpg",
         "price": "$25.00",
         "onSale": "",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 90
     },
     {
         "name": "Chewable pink toy",
@@ -85,7 +92,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-17-600x600.jpg",
         "price": "$8.00",
         "onSale": "",
-        "newProduct": true
+        "newProduct": true,
+        "allTimeSell": 21
     },
     {
         "name": "Chewable mixed toys",
@@ -96,7 +104,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-22-600x600.jpg",
         "price": "$25.00",
         "onSale": "$12.00",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 80
     },
     {
         "name": "Chewable weight",
@@ -107,7 +116,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-23-600x600.jpg",
         "price": "$11.00",
         "onSale": "",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 120
     },
     {
         "name": "Colorful ball set",
@@ -118,7 +128,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-2-600x600.jpg",
         "price": "$29.00",
         "onSale": "",
-        "newProduct": true
+        "newProduct": true,
+        "allTimeSell": 167
     },
     {
         "name": "Colorful cat leash",
@@ -129,7 +140,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-11-600x600.jpg",
         "price": "$12.00",
         "onSale": "",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 160
     },
     {
         "name": "Dog leash",
@@ -140,7 +152,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-20-600x600.jpg",
         "price": "$25.00",
         "onSale": "",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 122
     },
     {
         "name": "Animal transport bag",
@@ -151,7 +164,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-4-600x600.jpg",
         "price": "$29.00",
         "onSale": "",
-        "newProduct": true
+        "newProduct": true,
+        "allTimeSell": 34
     },
     {
         "name": "Cat transport cage",
@@ -162,7 +176,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-5-600x600.jpg",
         "price": "$35.00",
         "onSale": "",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 154
     },
     {
         "name": "Dog transport cage",
@@ -173,7 +188,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-16-600x600.jpg",
         "price": "$35.00",
         "onSale": "$25.00",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 160
     },
     {
         "name": "Transport cage",
@@ -184,7 +200,8 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-21-600x600.jpg",
         "price": "$25.00",
         "onSale": "",
-        "newProduct": false
+        "newProduct": false,
+        "allTimeSell": 140
     }
     
 ]
