@@ -33,6 +33,7 @@ export default {
 @use '@/style/variables' as *;
 
 #app {
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // header {

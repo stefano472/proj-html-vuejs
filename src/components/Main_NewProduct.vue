@@ -1,21 +1,24 @@
 <template>
   <div class="container">
+
     <div class="title">
       <h2 class="font-25">New products arrival</h2>
       <p>Latest products</p>
     </div>
+
     <ul class="flex-row">
-        <li v-for="item in arrayLatestItems" :key="item.name">
-          <div v-if="item.onSale.length > 1" class="sale flex-row font-09" >Sale!</div>
-          <img :src="item.imgPath" :alt="item.name">
-          <h3>{{item.name}}</h3>
-          <p v-if="item.onSale.length === 0">{{item.price}}</p>
-          <p v-else class="on-sale flex-row">
-            <span class="font-07">{{item.price}}</span> 
-            <span>{{item.onSale}}</span>
-          </p>
-        </li>
-      </ul>
+      <li v-for="item in arrayLatestItems" :key="item.name">
+        <div v-if="item.onSale.length > 1" class="sale flex-row font-09" >Sale!</div>
+        <img :src="item.imgPath" :alt="item.name">
+        <h3>{{item.name}}</h3>
+        <p v-if="item.onSale.length === 0">{{item.price}}</p>
+        <p v-else class="on-sale flex-row">
+          <span class="font-07">{{item.price}}</span> 
+          <span>{{item.onSale}}</span>
+        </p>
+      </li>
+    </ul>
+
   </div>
 </template>
 
@@ -46,10 +49,15 @@ export default {
 
 .title {
   margin: 4.75rem auto 3rem;
-    text-align: center;
+  text-align: center;
+  p{
+    color: $text-tertiary;
+    padding-top: 1.5rem;
+    font-weight: 600;
+  }
 }
 ul {
-    margin-bottom: 4.75rem;
+    margin-bottom: 3.75rem;
     flex-wrap: wrap;
     gap: 1rem;
     li {

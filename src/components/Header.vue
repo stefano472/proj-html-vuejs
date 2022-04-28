@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import arrayMenuList from "@/data/header-list.json"
+import arrayMenuList from "@/data/navbar.json"
 
 export default {
     name: "HeaderComponent",

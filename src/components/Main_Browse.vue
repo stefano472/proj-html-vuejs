@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+
     <div class="title">
       <h2 class="font-25">Browse by category</h2>
       <p>
@@ -16,6 +17,7 @@
         </li>
       </ul>
     </div>
+
     <div class="dog-food">
       <ul class="flex-row">
         <li v-for="item in arrayFood" :key="item.name">
@@ -26,11 +28,13 @@
         </li>
       </ul>
     </div>
+
     <div class="banner">
       <p class="font-09">FIND THE BEST ANIMAL SUPPLIES</p>
       <h1 class="font-30">New arrivals weekly</h1>
       <button class="btn btn__primary">Learn more about us</button>
     </div>
+
     <div class="item-loved">
       <div class="description-box flex-row">
         <div class="text">
@@ -65,6 +69,7 @@
         </li>
       </ul>
     </div>
+    
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="testimonials">
       <div class="container">
         <h2 class="font-25">User testimonials</h2>
@@ -8,6 +9,7 @@
                   :autoplayTimeout="5000"
                   :loop="true"
                   :speed="1500"
+                
                   class="carousel"
         >
           <slide class="card flex-column" v-for="testimonial in userTestimonials" :key="testimonial.id" >
@@ -21,7 +23,9 @@
         </carousel>
       </div>
     </div>
+
     <div class="tips container">
+
       <div class="newsletter">
         <div class="container">
           <div class="wrapper">
@@ -34,6 +38,7 @@
           </div>
         </div>
       </div>
+
       <h2 class="font-25">Get the best tips & tricks</h2>
       <p class="subtitle">All-time best sellers</p>
       <ul class="flex-row">
@@ -46,8 +51,11 @@
         </li>
       </ul>
       <button class="btn btn__secondary">read all articles</button>
+
     </div>
+
     <div class="product">
+
       <div class="best-product flex-row">
         <div class="banner banner__supplies">
           <p class="font-09">FIND THE BEST ANIMAL SUPPLIES</p>
@@ -60,6 +68,7 @@
           <button class="btn btn__primary">View all food products</button>
         </div>
       </div>
+
       <div class="company-feature">
         <ul class="flex-row">
           <li class="flex-column">
@@ -80,7 +89,9 @@
           </li>
         </ul>
       </div>
+
     </div>
+
   </div>
 </template>
 

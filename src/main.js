@@ -17,6 +17,10 @@ import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 
 /* add icons to the library */
@@ -31,7 +35,11 @@ library.add(
   faCheck,
   faQuoteLeft,
   faTruck,
-  faCreditCard
+  faCreditCard,
+  faFacebookF,
+  faTwitter,
+  faInstagram,
+  faYoutube
 )
 
 /* import font awesome icon component */
