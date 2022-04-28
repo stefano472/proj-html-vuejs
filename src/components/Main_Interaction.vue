@@ -4,23 +4,7 @@
     <div class="testimonials">
       <div class="container">
         <h2 class="font-25">User testimonials</h2>
-        <carousel :per-page="3"
-                  :autoplay="true"
-                  :autoplayTimeout="5000"
-                  :loop="true"
-                  :speed="1500"
-                
-                  class="carousel"
-        >
-          <slide class="card flex-column" v-for="testimonial in userTestimonials" :key="testimonial.id" >
-            <img :src="userImg(testimonial.id)" :alt="'avatar-' + testimonial.id">
-            <p>
-              <font-awesome-icon class="quote font-30" icon="fa-solid fa-quote-left" />
-              <span>{{testimonial.name}}</span>
-            </p>
-            <i class="font-09">{{testimonial.text}}</i>
-          </slide>
-        </carousel>
+        <Carousel></Carousel>
       </div>
     </div>
 
@@ -96,23 +80,22 @@
 </template>
 
 <script>
-import userTestimonials from "@/data/testimonials.json"
+// import userTestimonials from "@/data/testimonials.json"
 import tipsTrick from "@/data/tips.json"
 
-import { Carousel, Slide } from 'vue-carousel';
+import Carousel from "@/components/Carousel";
 
 export default {
     name: "MainInteraction",
     data() {
       return {
-        userTestimonials,
         tipsTrick,
-        inputEmail: ''
+        inputEmail: '',
       }
     },
     components: {
       Carousel,
-      Slide
+
     },
     computed: {
       show4TipsTricks() {
@@ -123,9 +106,7 @@ export default {
       }
     },
     methods: {
-      userImg(path) {
-        return require(`@/assets/avatar-${path}.jpg`)
-      },
+      
       tipsImg(path) {
         return require(`@/assets/blog-${path}.jpg`)
       },
@@ -147,31 +128,31 @@ export default {
   text-align: center;
   background: $bg-brand;
   background-image: url("@/assets/bg-transparent-3.png");
-  padding: 5rem 0;
-  .carousel {
-    .card {
-      padding: 3rem 1.5rem 0;
-      img {
-        margin-bottom: 1rem;
-        margin-inline: auto;
-        border-radius: 50%;
-        width: 8rem;
-      }
-      p {
-        position: relative;
-        .quote {
-          color: $text-subtitle;
-          position: absolute;
-          top: -2rem;
-          left: 2rem;
-        }
-      }
-      i {
-        margin-top: 1rem;
-        color: $text-subtitle;
-      }
-    }
-  }
+  padding: 4.75rem 0;
+  // .carousel {
+  //   .card {
+  //     padding: 3rem 1.5rem 0;
+  //     img {
+  //       margin-bottom: 1rem;
+  //       margin-inline: auto;
+  //       border-radius: 50%;
+  //       width: 8rem;
+  //     }
+  //     p {
+  //       position: relative;
+  //       .quote {
+  //         color: $text-subtitle;
+  //         position: absolute;
+  //         top: -2rem;
+  //         left: 2rem;
+  //       }
+  //     }
+  //     i {
+  //       margin-top: 1rem;
+  //       color: $text-subtitle;
+  //     }
+  //   }
+  // }
 }
 .tips {
   position: relative;
