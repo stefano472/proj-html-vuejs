@@ -165,7 +165,7 @@ export default {
 .tips {
   position: relative;
   text-align: center;
-  padding: 22rem 0 6rem;
+  padding: 23.25rem 0 6rem;
   .newsletter {
     box-shadow: 0 0 25px 5px rgb(0 0 0 / 20%);
     text-align: left;

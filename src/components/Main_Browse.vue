@@ -54,6 +54,7 @@
       </div>
       <ul class="flex-row">
         <li v-for="item in arrayItemLoved" :key="item.name">
+          <div v-if="item.onSale.length > 1" class="sale flex-row font-09" >Sale!</div>
           <img :src="item.imgPath" :alt="item.name">
           <h3>{{item.name}}</h3>
           <p v-if="item.onSale.length === 0">{{item.price}}</p>
@@ -123,7 +124,7 @@ export default {
 
 .title {
   width: 50%;
-  margin: 6rem auto;
+  margin: 5.5rem auto 3.5rem;
   text-align: center;
   p {
     line-height: 1.5;
@@ -190,7 +191,7 @@ export default {
   }
 }
 .item-loved {
-  margin: 6rem auto;
+  margin: 6rem auto 3.75rem;
   .description-box {
     margin-bottom: 3rem;
     justify-content: space-between;
@@ -204,8 +205,20 @@ export default {
     flex-wrap: wrap;
     gap: 0.7rem;
     li {
+      position: relative;
       text-align: center;
       flex-basis: calc(100% / 4 - 0.7rem * 3 / 4);
+      .sale {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        color: $text-title;
+        justify-content: center;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        background: $btn-bg-secondary;
+      }
       img {
         border-radius: 2px;
         width: 100%;

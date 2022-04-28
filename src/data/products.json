@@ -20,7 +20,7 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-8-600x600.jpg",
         "price": "$25.00",
         "onSale": "",
-        "newProduct": false,
+        "newProduct": true,
         "allTimeSell": 102
     },
     {
@@ -44,7 +44,7 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-18-600x600.jpg",
         "price": "$5.00",
         "onSale": "",
-        "newProduct": true,
+        "newProduct": false,
         "allTimeSell": 15
     },
     {
@@ -152,7 +152,7 @@
         "imgPath": "https://avada.theme-fusion.com/pet-supplies/wp-content/uploads/sites/139/2020/04/product-20-600x600.jpg",
         "price": "$25.00",
         "onSale": "",
-        "newProduct": false,
+        "newProduct": true,
         "allTimeSell": 122
     },
     {
