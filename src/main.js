@@ -12,6 +12,8 @@ import { faUserLarge } from '@fortawesome/free-solid-svg-icons'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faDollarSign } from '@fortawesome/free-solid-svg-icons'
 import { faMap } from '@fortawesome/free-regular-svg-icons'
+import { faTruck } from '@fortawesome/free-solid-svg-icons'
+import { faCreditCard } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
@@ -27,7 +29,9 @@ library.add(
   faMap, 
   faClock, 
   faCheck,
-  faQuoteLeft
+  faQuoteLeft,
+  faTruck,
+  faCreditCard
 )
 
 /* import font awesome icon component */

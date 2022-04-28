@@ -8,7 +8,6 @@
                   :autoplayTimeout="5000"
                   :loop="true"
                   :speed="1500"
-  
                   class="carousel"
         >
           <slide class="card flex-column" v-for="testimonial in userTestimonials" :key="testimonial.id" >
@@ -48,7 +47,40 @@
       </ul>
       <button class="btn btn__secondary">read all articles</button>
     </div>
-    <div class="product"></div>
+    <div class="product">
+      <div class="best-product flex-row">
+        <div class="banner banner__supplies">
+          <p class="font-09">FIND THE BEST ANIMAL SUPPLIES</p>
+          <h2 class="font-25">Popular accessories</h2>
+          <button class="btn btn__primary">View all toys accessories</button>
+        </div>
+        <div class="banner banner__food">
+          <p class="font-09">FIND THE BEST FOOD</p>
+          <h2 class="font-25">New food arrival</h2>
+          <button class="btn btn__primary">View all food products</button>
+        </div>
+      </div>
+      <div class="company-feature">
+        <ul class="flex-row">
+          <li class="flex-column">
+            <font-awesome-icon class="font-25" icon="fa-solid fa-truck" />
+            <p class="font-09">Free worldwide deliveries</p>
+          </li>
+          <li class="flex-column">
+            <font-awesome-icon class="font-25" icon="fa-regular fa-map" />
+            <p class="font-09">Find stores near you</p>
+          </li>
+          <li class="flex-column">
+            <font-awesome-icon class="font-25" icon="fa-solid fa-dollar-sign" />
+            <p class="font-09">Best prices guaranteed</p>
+          </li>
+          <li class="flex-column">
+            <font-awesome-icon class="font-25" icon="fa-solid fa-credit-card" />
+            <p class="font-09">All credit card accepted</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -133,7 +165,7 @@ export default {
 .tips {
   position: relative;
   text-align: center;
-  padding-top: 22rem;
+  padding: 22rem 0 6rem;
   .newsletter {
     box-shadow: 0 0 25px 5px rgb(0 0 0 / 20%);
     text-align: left;
@@ -192,6 +224,46 @@ export default {
         p:first-child {
           margin-bottom: 0.5rem;
         }
+      }
+    }
+  }
+}
+.product {
+  color: $text-title;
+  background: $bg-brand;
+  background-image: url("@/assets/bg-transparent-3.png");
+  // padding: 0 0 5rem;
+  .best-product {
+    .banner {
+      width: 50%;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      color: $text-title;
+      text-align: center;
+      &__supplies {
+        background-image: url("@/assets/banner-8-2x.jpg");
+      }
+      &__food {
+        background-image: url("@/assets/banner-9-2x.jpg");
+      }
+      p {
+        padding: 9rem 0 2rem;
+        font-weight: 600;
+      }
+      button {
+        margin: 2rem 0 9rem;
+      }
+    }
+  }
+  .company-feature {
+    padding: 5rem 1.25rem;
+    ul {
+      justify-content: space-evenly;
+      p {
+        margin-top: 1rem;
+        color: $bg-card;
       }
     }
   }
