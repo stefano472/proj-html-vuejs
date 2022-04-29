@@ -33,5 +33,19 @@
         "title": "How to choose the best food for your dog",
         "date": "March 1st, 2020",
         "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, optio aliquid, culpa pariatur minima."
+    },
+    {
+        "type": "Tips & Tricks",
+        "id": 6,
+        "title": "How to choose the best food for your dog",
+        "date": "February 1st, 2020",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, optio aliquid, culpa pariatur minima."
+    },
+    {
+        "type": "Tips & Tricks",
+        "id": 7,
+        "title": "How to choose the best food for your dog",
+        "date": "January 1st, 2020",
+        "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, optio aliquid, culpa pariatur minima."
     }
 ]

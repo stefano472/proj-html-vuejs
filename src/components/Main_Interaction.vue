@@ -26,7 +26,7 @@
       <h2 class="font-25">Get the best tips & tricks</h2>
       <p class="subtitle">All-time best sellers</p>
       <ul class="flex-row">
-        <li v-for="tips in show4TipsTricks" :key="tips.id">
+        <li v-for="tips in showTipsTricks" :key="tips.id">
           <div class="img-container">
               <img :src="tipsImg(tips.id)" :alt="'blog:'+ tips.id">
               <div class="text-hover">
@@ -43,7 +43,21 @@
           </div>
         </li>
       </ul>
-      <button class="btn btn__secondary">read all articles</button>
+      <div class="button">
+          <button v-if="!showAllTipsTricks" 
+                  @click="showAllTipsTricks = !showAllTipsTricks" 
+                  class="btn btn__secondary"
+          >
+            Read all articles
+          </button>
+          <button v-if="showAllTipsTricks" 
+                  @click="showAllTipsTricks = !showAllTipsTricks" 
+                  class="btn btn__secondary"
+          >
+            Show the latest articles
+          </button>
+        </div>
+      <!-- <button class="btn btn__secondary">read all articles</button> -->
 
     </div>
 
@@ -90,7 +104,7 @@
 
 <script>
 // import userTestimonials from "@/data/testimonials.json"
-import tipsTrick from "@/data/tips.json"
+import allTipsTrick from "@/data/tips.json"
 
 import Carousel from "@/components/Carousel";
 
@@ -98,8 +112,9 @@ export default {
     name: "MainInteraction",
     data() {
       return {
-        tipsTrick,
+        allTipsTrick,
         inputEmail: '',
+        showAllTipsTricks: false
       }
     },
     components: {
@@ -107,11 +122,11 @@ export default {
 
     },
     computed: {
-      show4TipsTricks() {
-        if(this.tipsTrick.length < 5) {
-          return this.tipsTrick
+      showTipsTricks() {
+        if (this.showAllTipsTricks) {
+          return this.allTipsTrick
         }
-        return this.tipsTrick.slice(0,4)
+        return this.allTipsTrick.slice(0,4)
       }
     },
     methods: {
@@ -192,9 +207,11 @@ export default {
       font-weight: 600;
     }
   ul {
+    flex-wrap: wrap;
     margin-bottom: 3rem;
     gap: 2rem;
     li {
+      flex-basis: calc(25% - 2rem * 3 / 4);
       .img-container {
           display: flex;
           position: relative;
