@@ -27,7 +27,16 @@
       <p class="subtitle">All-time best sellers</p>
       <ul class="flex-row">
         <li v-for="tips in show4TipsTricks" :key="tips.id">
-          <img :src="tipsImg(tips.id)" :alt="'blog:'+ tips.id">
+          <div class="img-container">
+              <img :src="tipsImg(tips.id)" :alt="'blog:'+ tips.id">
+              <div class="text-hover">
+                  <div class="flex-column align">
+                      <p>{{tips.title}}</p>
+                      <p class="font-07">{{tips.type}}</p>
+                  </div>
+              </div>
+          </div>
+          <!-- <img :src="tipsImg(tips.id)" :alt="'blog:'+ tips.id"> -->
           <div class="tips-text">
             <p>{{tips.title}}</p>
             <p class="font-07">{{tips.date}}</p>
@@ -206,9 +215,39 @@ export default {
     margin-bottom: 3rem;
     gap: 2rem;
     li {
-      img {
-        width: 100%;
+      .img-container {
+          display: flex;
+          position: relative;
+          cursor: pointer;
+          &:hover {
+              .text-hover{
+                  opacity: 1;
+                  z-index: 6;
+              }
+          }
+          img {
+              border-radius: 2px;
+              width: 100%;
+          }
+          .text-hover {
+              opacity: 0;
+              height: 100%;
+              width: 100%;
+              position: absolute;
+              top: 0;
+              padding: 2rem;
+              color: $text-title;
+              background-blend-mode: multiply;
+              background-color: rgba($color: #cdb899, $alpha: 0.7);
+              transition: 0.3s;
+              &>div {
+                  height: inherit;
+                  justify-content: center;
+                  gap: 1rem;
+              }
+          }
       }
+
       .tips-text {
         text-align: left;
         padding: 1rem 2rem;
@@ -228,12 +267,18 @@ export default {
   .best-product {
     .banner {
       width: 50%;
-      background-size: cover;
+      background-size: 100%;
+      background-repeat: no-repeat;
       background-position: center;
       background-blend-mode: multiply;
       background-color: rgba($color: #000000, $alpha: 0.3);
       color: $text-title;
       text-align: center;
+      transition: 1s;
+      &:hover{
+        background-size: 140%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+      }
       &__supplies {
         background-image: url("@/assets/banner-8-2x.jpg");
       }

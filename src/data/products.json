@@ -9,7 +9,8 @@
         "price": "$25.00",
         "onSale": "$19.90",
         "newProduct": false,
-        "allTimeSell": 251
+        "allTimeSell": 251,
+        "hoverActive": false
     },
     {
         "name": "Green colored pet bed",
@@ -21,7 +22,8 @@
         "price": "$25.00",
         "onSale": "",
         "newProduct": true,
-        "allTimeSell": 102
+        "allTimeSell": 102,
+        "hoverActive": false
     },
     {
         "name": "Dog bone",
@@ -33,7 +35,8 @@
         "price": "$29.00",
         "onSale": "$18.00",
         "newProduct": true,
-        "allTimeSell": 5
+        "allTimeSell": 5,
+        "hoverActive": false
     },
     {
         "name": "Dog treats",
@@ -45,7 +48,8 @@
         "price": "$5.00",
         "onSale": "",
         "newProduct": false,
-        "allTimeSell": 15
+        "allTimeSell": 15,
+        "hoverActive": false
     },
     {
         "name": "Dry food",
@@ -57,7 +61,8 @@
         "price": "$25.00",
         "onSale": "",
         "newProduct": false,
-        "allTimeSell": 150
+        "allTimeSell": 150,
+        "hoverActive": false
     },
     {
         "name": "Moist food",
@@ -69,7 +74,8 @@
         "price": "$25.00",
         "onSale": "",
         "newProduct": false,
-        "allTimeSell": 145
+        "allTimeSell": 145,
+        "hoverActive": false
     },
     {
         "name": "Frozen food",
@@ -81,7 +87,8 @@
         "price": "$25.00",
         "onSale": "",
         "newProduct": false,
-        "allTimeSell": 90
+        "allTimeSell": 90,
+        "hoverActive": false
     },
     {
         "name": "Chewable pink toy",
@@ -93,7 +100,8 @@
         "price": "$8.00",
         "onSale": "",
         "newProduct": true,
-        "allTimeSell": 21
+        "allTimeSell": 21,
+        "hoverActive": false
     },
     {
         "name": "Chewable mixed toys",
@@ -105,7 +113,8 @@
         "price": "$25.00",
         "onSale": "$12.00",
         "newProduct": false,
-        "allTimeSell": 80
+        "allTimeSell": 80,
+        "hoverActive": false
     },
     {
         "name": "Chewable weight",
@@ -117,7 +126,8 @@
         "price": "$11.00",
         "onSale": "",
         "newProduct": false,
-        "allTimeSell": 120
+        "allTimeSell": 120,
+        "hoverActive": false
     },
     {
         "name": "Colorful ball set",
@@ -129,7 +139,8 @@
         "price": "$29.00",
         "onSale": "",
         "newProduct": true,
-        "allTimeSell": 167
+        "allTimeSell": 167,
+        "hoverActive": false
     },
     {
         "name": "Colorful cat leash",
@@ -141,7 +152,8 @@
         "price": "$12.00",
         "onSale": "",
         "newProduct": false,
-        "allTimeSell": 160
+        "allTimeSell": 160,
+        "hoverActive": false
     },
     {
         "name": "Dog leash",
@@ -153,7 +165,8 @@
         "price": "$25.00",
         "onSale": "",
         "newProduct": true,
-        "allTimeSell": 122
+        "allTimeSell": 122,
+        "hoverActive": false
     },
     {
         "name": "Animal transport bag",
@@ -165,7 +178,8 @@
         "price": "$29.00",
         "onSale": "",
         "newProduct": true,
-        "allTimeSell": 34
+        "allTimeSell": 34,
+        "hoverActive": false
     },
     {
         "name": "Cat transport cage",
@@ -177,7 +191,8 @@
         "price": "$35.00",
         "onSale": "",
         "newProduct": false,
-        "allTimeSell": 154
+        "allTimeSell": 154,
+        "hoverActive": false
     },
     {
         "name": "Dog transport cage",
@@ -189,7 +204,8 @@
         "price": "$35.00",
         "onSale": "$25.00",
         "newProduct": false,
-        "allTimeSell": 160
+        "allTimeSell": 160,
+        "hoverActive": false
     },
     {
         "name": "Transport cage",
@@ -201,7 +217,8 @@
         "price": "$25.00",
         "onSale": "",
         "newProduct": false,
-        "allTimeSell": 140
+        "allTimeSell": 140,
+        "hoverActive": false
     }
     
 ]

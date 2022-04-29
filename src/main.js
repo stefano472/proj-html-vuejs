@@ -21,6 +21,8 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faStar as fasStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar as farStar } from '@fortawesome/free-regular-svg-icons'
 
 
 /* add icons to the library */
@@ -39,7 +41,9 @@ library.add(
   faFacebookF,
   faTwitter,
   faInstagram,
-  faYoutube
+  faYoutube,
+  fasStar,
+  farStar
 )
 
 /* import font awesome icon component */

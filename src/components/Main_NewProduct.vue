@@ -9,13 +9,7 @@
     <ul class="flex-row">
       <li v-for="item in arrayLatestItems" :key="item.name">
         <div v-if="item.onSale.length > 1" class="sale flex-row font-09" >Sale!</div>
-        <img :src="item.imgPath" :alt="item.name">
-        <h3>{{item.name}}</h3>
-        <p v-if="item.onSale.length === 0">{{item.price}}</p>
-        <p v-else class="on-sale flex-row">
-          <span class="font-07">{{item.price}}</span> 
-          <span>{{item.onSale}}</span>
-        </p>
+        <product-card :item="item"></product-card>
       </li>
     </ul>
 
@@ -25,8 +19,14 @@
 <script>
 import arrayProducts from "@/data/products.json"
 
+import ProductCard from '@/components/ProductCard'
+
+
 export default {
     name: "MainNewProduct",
+    components: {
+      ProductCard
+    },
     data() {
       return {
         arrayProducts,
@@ -75,10 +75,12 @@ ul {
         height: 3rem;
         background: $btn-bg-secondary;
       }
-      img {
-        border-radius: 2px;
-        width: 100%;
-        padding-bottom: 1rem;
+      h3 {
+        padding-top: 1rem;
+        cursor: pointer;
+        &:hover {
+          color: $text-subtitle;
+        }
       }
       p {
         color: $text-tertiary;

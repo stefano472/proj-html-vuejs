@@ -58,14 +58,31 @@
       </div>
       <ul class="flex-row">
         <li v-for="item in arrayItemLoved" :key="item.name">
-          <div v-if="item.onSale.length > 1" class="sale flex-row font-09" >Sale!</div>
-          <img :src="item.imgPath" :alt="item.name">
-          <h3>{{item.name}}</h3>
+          <!-- <div v-if="item.onSale.length > 1" class="sale flex-row font-09" >Sale!</div> -->
+          <product-card :item="item"></product-card>
+          <!-- <div class="img-container">
+            <img :src="item.imgPath" :alt="item.name">
+            <div class="text-hover">
+              <div>
+                <font-awesome-icon v-for="number in item.rating" 
+                          :key="'fillStar:' + number"  
+                          icon="fa-solid fa-star" 
+                          class="fillStar" 
+                  />
+                  <font-awesome-icon v-for="number in (5 - item.rating)" 
+                          :key="'emptyStar:' + number" 
+                          icon="fa-regular fa-star" 
+                  /> 
+              </div>
+              <p>ADD TO CART / QUICK VIEW</p>
+            </div>
+          </div> -->
+          <!-- <h3>{{item.name}}</h3>
           <p v-if="item.onSale.length === 0">{{item.price}}</p>
           <p v-else class="on-sale flex-row">
             <span class="font-07">{{item.price}}</span> 
             <span>{{item.onSale}}</span>
-          </p>
+          </p> -->
         </li>
       </ul>
     </div>
@@ -76,9 +93,12 @@
 <script>
 import arrayProducts from "@/data/products.json"
 
+import ProductCard from '@/components/ProductCard'
+
 
 export default {
     name: "MainBrowse",
+    components: { ProductCard },
     data() {
       return {
         arrayProducts,
@@ -144,6 +164,7 @@ export default {
       text-align: center;
       flex-basis: calc(100% / 4 - 0.7rem * 3 / 4);
       img {
+        cursor: pointer;
         border-radius: 2px;
         width: 100%;
         padding-bottom: 1rem;
@@ -165,6 +186,12 @@ export default {
       background-size: 60%;
       text-align: center;
       flex-basis: calc(100% / 3 - 1rem * 2 / 3);
+      transition: 0.5s;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 25px 5px rgb(0 0 0 / 20%);
+        opacity: 0.955;
+      }
       h2 {
         color: $text-title;
       }
@@ -213,33 +240,6 @@ export default {
       position: relative;
       text-align: center;
       flex-basis: calc(100% / 4 - 0.7rem * 3 / 4);
-      .sale {
-        position: absolute;
-        top: 0.5rem;
-        left: 0.5rem;
-        color: $text-title;
-        justify-content: center;
-        border-radius: 50%;
-        width: 3rem;
-        height: 3rem;
-        background: $btn-bg-secondary;
-      }
-      img {
-        border-radius: 2px;
-        width: 100%;
-        padding-bottom: 1rem;
-      }
-      p {
-        color: $text-tertiary;
-        margin: 0.7rem auto 1rem;
-        &.on-sale {
-          justify-content: center;
-          gap: 0.2rem;
-          span:first-child {
-            text-decoration: line-through;
-          }
-        }
-      }
     }
   }
 }
