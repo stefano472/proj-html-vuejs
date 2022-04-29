@@ -1,7 +1,12 @@
 <template>
-    <div v-show="currentSlide === index" 
+<!-- dipende se voglio utilizzare il display none oppure l'opacity per l'animazione...
+con il display non posso fare transition, però al contrario così sono costretto
+ a dare un altezza al contenitore -->
+<!-- v-show="currentSlide === index" -->
+    <div  
         @mouseover="$emit('mouseenter')"
         @mouseleave="$emit('mouseout')"
+        :class="index === currentSlide? 'active': ''"
         class="carousel-item flex-column"
     >
         <img :src="userImg(slide.id)" :alt="'avatar-' + slide.id">
@@ -22,9 +27,9 @@ export default {
         index: Number,
         slide: Object
     },
-    data() {
-        return {
-            
+    computed: {
+        transitionEffect() {
+            return 'slide-in'
         }
     },
     methods: {
@@ -41,11 +46,21 @@ export default {
 
 
 .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    opacity: 0;
+    transition: 500ms opacity ease-in-out;
+    &.active {
+        opacity: 1;
+        z-index: 10;
+    }
+    // transition-delay: 500ms;
     border-radius: 50%;
-    padding: 2.5rem 0 3.5rem;
     align-items: center;
     justify-content: center;
-    margin-inline: auto;
+    margin: 2.5rem auto 3.5rem;
     width: 50%;
     img {
     margin-bottom: 1rem;
@@ -71,5 +86,4 @@ export default {
         color: $text-subtitle;
     }
 }
-
 </style>

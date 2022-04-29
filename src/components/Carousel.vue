@@ -70,5 +70,6 @@ export default {
 <style lang="scss" scoped>
 .carousel {
     position: relative;
+    height: 26rem;
 }
 </style>

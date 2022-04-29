@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hide-overflow">
 
     <div class="testimonials">
       <div class="container">
@@ -132,36 +132,16 @@ export default {
 <style lang="scss" scoped>
 @use '@/style/variables' as *;
 
+.hide-overflow {
+  overflow-x: hidden;
+}
+
 .testimonials {
   color: $text-title;
   text-align: center;
   background: $bg-brand;
   background-image: url("@/assets/bg-transparent-3.png");
   padding: 4.75rem 0;
-  // .carousel {
-  //   .card {
-  //     padding: 3rem 1.5rem 0;
-  //     img {
-  //       margin-bottom: 1rem;
-  //       margin-inline: auto;
-  //       border-radius: 50%;
-  //       width: 8rem;
-  //     }
-  //     p {
-  //       position: relative;
-  //       .quote {
-  //         color: $text-subtitle;
-  //         position: absolute;
-  //         top: -2rem;
-  //         left: 2rem;
-  //       }
-  //     }
-  //     i {
-  //       margin-top: 1rem;
-  //       color: $text-subtitle;
-  //     }
-  //   }
-  // }
 }
 .tips {
   position: relative;
@@ -263,21 +243,22 @@ export default {
   color: $text-title;
   background: $bg-brand;
   background-image: url("@/assets/bg-transparent-3.png");
-  // padding: 0 0 5rem;
   .best-product {
     .banner {
       width: 50%;
-      background-size: 100%;
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       background-blend-mode: multiply;
       background-color: rgba($color: #000000, $alpha: 0.3);
       color: $text-title;
       text-align: center;
-      transition: 1s;
+      transition: 0.5s;
       &:hover{
-        background-size: 140%;
+        // background-size: 150%;
+        transform: scale(1.03);
         background-color: rgba($color: #000000, $alpha: 0.6);
+        z-index: 10;
       }
       &__supplies {
         background-image: url("@/assets/banner-8-2x.jpg");
